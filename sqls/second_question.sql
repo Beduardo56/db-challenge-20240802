@@ -2,8 +2,8 @@
 
 SELECT
     products.product_id,
-    products.product_name AS "Produto"
-    brand.brand_name AS "Marca"
+    products.product_name AS "Produto",
+    brand.brand_name AS "Marca",
     products.model_year AS "Ano do modelo"
 FROM 
      products
