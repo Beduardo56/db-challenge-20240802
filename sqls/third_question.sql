@@ -14,7 +14,7 @@ SELECT
     products.model_year AS "Ano do modelo"
 FROM
     products_quantity
-    LEFT JOIN products ON products_quantity.product_id = products.id
-    LEFT JOIN brands ON products.brand_id = brands.id
+    LEFT JOIN products ON products_quantity.product_id = products.product_id
+    LEFT JOIN brands ON products.brand_id = brands.brand_id
 WHERE
     products_quantity.quantity = 0

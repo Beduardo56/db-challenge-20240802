@@ -9,6 +9,6 @@ FROM
      products
         LEFT JOIN
      brands
-    on products.brand_id=brands.id
+    on products.brand_id=brands.brand_id
 WHERE
     products.product_id not in (SELECT distinct product_id from order_items)
